@@ -91,3 +91,66 @@ console.log(true || false);
 console.log(!true);
 console.log(0 ?? "default value");
 console.log(null ?? "default value");
+
+/*
+conditions
+*/
+let years = 30;
+if (years >= 18) {
+    console.log("You are an adult");
+} else {
+    console.log("You are a minor");
+}
+
+let score = 80;
+if (score >= 90) {
+    console.log("A");
+} else if (score >= 80) {
+    console.log("B");
+} else if (score >= 70) {
+    console.log("C");
+} else if (score >= 60) {
+    console.log("D");
+} else {
+    console.log("F");
+}
+
+
+/*
+loops
+*/
+// for loop (initial; condition(t/f); incremental )
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+//use break
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+    if (i == 5) {
+        break; //stop loop
+    }
+}
+//use continue
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 == 0) {
+        console.log("Even number: " + i);
+        continue; // skip
+    }
+    console.log(i);
+}
+
+//while loop
+let i = 1;
+while (i <= 10) {
+    console.log(i);
+    i++; //make sure to always change the variable that is being compared
+}
+
+//do - while
+console.log("Do - while loop");
+let j = 1;
+do {
+    //it's executed at least 1
+    console.log(j);
+    j++;
+} while (j <= 10);
