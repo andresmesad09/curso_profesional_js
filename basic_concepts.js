@@ -154,3 +154,18 @@ do {
     console.log(j);
     j++;
 } while (j <= 10);
+
+/*
+undefined (not value assigned), null (value assigned but it's empty), y NaN (not a number)
+*/
+console.log("\nUndefined, null, NaN\n")
+let nombre;
+console.log(nombre);
+console.log(typeof nombre);
+let apellido = null;
+console.log(apellido);
+console.log(typeof apellido);
+let num = 10;
+let num2 = "Andres";
+console.log(num * num2);
+console.log(typeof (num * num2));
